@@ -18,19 +18,19 @@ CakePlugin::load('ElapsedTime');
 
 $this->ElapsedTime->absFormat($timeInSeconds,$full,$leading,$array);
 
-$this->ElapsedTime->inSeconds($array('hours' => $hours, 'minutes' => $minutes, 'seconds' => $seconds));
+$this->ElapsedTime->inSeconds(array('hours' => $hours, 'minutes' => $minutes, 'seconds' => $seconds));
 
 *In a model:*
 
 $this->absFormat($timeInSeconds,$full,$leading,$array);
 
-$this->inSeconds($array('hours' => $hours, 'minutes' => $minutes, 'seconds' => $seconds));
+$this->inSeconds(array('hours' => $hours, 'minutes' => $minutes, 'seconds' => $seconds));
 
 *In a view:*
 
 $this->ElapsedTime->absFormat($timeInSeconds,$full,$leading,$array);
 
-$this->ElapsedTime->inSeconds($array('hours' => $hours, 'minutes' => $minutes, 'seconds' => $seconds));
+$this->ElapsedTime->inSeconds(array('hours' => $hours, 'minutes' => $minutes, 'seconds' => $seconds));
 
 
 ## Options
@@ -46,19 +46,19 @@ array = true: returns an array of times with keys 'hours', 'minutes', 'seconds'
 
 ## Examples
 
-return $this->ElapsedTIme->absFormat(321);
+return $this->ElapsedTime->absFormat(321);
 
 => '5:21'
 
-return $this->ElapsedTIme->absFormat(321,true,true);
+return $this->ElapsedTime->absFormat(321,true,true);
 
 => '00:05:21'
 
-return $this->ElapsedTIme->absFormat(321,null,null,true);
+return $this->ElapsedTime->absFormat(321,null,null,true);
 
 => array('hours' => '0', 'minutes' => '5', 'seconds' => '21')
 
-return $this->ElapsedTIme->absFormat(321,true,true,true);
+return $this->ElapsedTime->absFormat(321,true,true,true);
 
 => array('hours' => '00', 'minutes' => '05', 'seconds' => '21')
 
