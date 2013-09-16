@@ -1,7 +1,7 @@
 <?php
 App::uses('Behavior', 'Model');
 
-class AbsoluteTimeBehavior extends ModelBehavior {
+class ElapsedTimeBehavior extends ModelBehavior {
 
 	public function absFormat(Model $model, $total_secs,$full = false,$leading = false,$array = false) {
     	// retuns time as formatted string.

@@ -1,7 +1,7 @@
 <?php
 App::uses('Helper', 'View');
 
-class AbsoluteTimeHelper extends AppHelper {
+class ElapsedTimeHelper extends AppHelper {
 
     public function absFormat($total_secs,$full = false,$leading = false,$array = false) {
     	// retuns time as formatted string.

@@ -1,7 +1,7 @@
 <?php
 App::uses('Component', 'Controller');
 
-class AbsoluteTimeComponent extends Component {
+class ElapsedTimeComponent extends Component {
 
 	public function absFormat($total_secs,$full = false,$leading = false,$array = false) {
     	// retuns time as formatted string.
